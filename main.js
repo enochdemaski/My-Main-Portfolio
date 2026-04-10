@@ -13,6 +13,8 @@ if (hamburger) {
     hamburger.addEventListener('click', toggleMobileMenu);
 }
 
+
+
 // -------------------------------
 // Smooth scrolling for navigation
 // -------------------------------
@@ -32,7 +34,12 @@ const handleNavLinkClick = (event) => {
 };
 
 pageLinks.forEach(link => {
-    link.addEventListener('click', handleNavLinkClick);
+    link.addEventListener('click', event => {
+        handleNavLinkClick(event);
+        if (navLinks && navLinks.classList.contains('active')) {
+            toggleMobileMenu();
+        }
+    });
 });
 
 // -------------------------------
@@ -54,20 +61,14 @@ const scrollCarousel = (position) => {
 
 const scrollNext = () => {
     if (!carouselTrack) return;
-    currentPosition += slideAmount;
     const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
-    if (currentPosition > maxScroll) {
-        currentPosition = maxScroll;
-    }
+    currentPosition = Math.min(carouselTrack.scrollLeft + slideAmount, maxScroll);
     scrollCarousel(currentPosition);
 };
 
 const scrollPrev = () => {
     if (!carouselTrack) return;
-    currentPosition -= slideAmount;
-    if (currentPosition < 0) {
-        currentPosition = 0;
-    }
+    currentPosition = Math.max(carouselTrack.scrollLeft - slideAmount, 0);
     scrollCarousel(currentPosition);
 };
 
@@ -85,9 +86,9 @@ if (prevButton) {
 const projectsGrid = document.querySelector('.projects-grid');
 
 const renderProjects = () => {
-    if (!projectsGrid || !window.projectsData) return;
+    if (!projectsGrid || typeof window.projectsData === 'undefined') return;
 
-    const projectHtml = projectsData.map(project => {
+    const projectHtml = window.projectsData.map(project => {
         return `
             <div class="project">
                 <h3>${project.title}</h3>

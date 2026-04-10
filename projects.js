@@ -1,4 +1,4 @@
-const projectsData = [
+window.projectsData = [
   {
     title: 'Project 1',
     description: 'A responsive landing page built with HTML and CSS.',
