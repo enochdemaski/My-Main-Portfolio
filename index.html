@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Portfolio</div>
+            <div class="logo">{Enoch}</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -26,10 +26,15 @@
 
     <main>
         <section id="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm [Your Name]</h1>
-                <p>Frontend Developer passionate about creating beautiful and functional web experiences.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Hi, I'm Enoch</h1>
+                    <p>Frontend Developer passionate about creating beautiful and functional web experiences.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/images/maski.png" alt="Profile image of Enoch">
+                </div>
             </div>
         </section>
 
@@ -43,13 +48,17 @@
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">React</div>
-                    <div class="skill">Vue.js</div>
-                    <div class="skill">Node.js</div>
+                <div class="skills-carousel">
+                    <button class="carousel-btn prev">&lt;</button>
+                    <div class="carousel-track">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Vue.js</div>
+                        <div class="skill">Node.js</div>
+                    </div>
+                    <button class="carousel-btn next">&gt;</button>
                 </div>
             </div>
         </section>

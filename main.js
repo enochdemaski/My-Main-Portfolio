@@ -36,6 +36,50 @@ pageLinks.forEach(link => {
 });
 
 // -------------------------------
+// Skills carousel controls
+// -------------------------------
+const carouselTrack = document.querySelector('.carousel-track');
+const prevButton = document.querySelector('.carousel-btn.prev');
+const nextButton = document.querySelector('.carousel-btn.next');
+let currentPosition = 0;
+const slideAmount = 220;
+
+const scrollCarousel = (position) => {
+    if (!carouselTrack) return;
+    carouselTrack.scrollTo({
+        left: position,
+        behavior: 'smooth'
+    });
+};
+
+const scrollNext = () => {
+    if (!carouselTrack) return;
+    currentPosition += slideAmount;
+    const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
+    if (currentPosition > maxScroll) {
+        currentPosition = maxScroll;
+    }
+    scrollCarousel(currentPosition);
+};
+
+const scrollPrev = () => {
+    if (!carouselTrack) return;
+    currentPosition -= slideAmount;
+    if (currentPosition < 0) {
+        currentPosition = 0;
+    }
+    scrollCarousel(currentPosition);
+};
+
+if (nextButton) {
+    nextButton.addEventListener('click', scrollNext);
+}
+
+if (prevButton) {
+    prevButton.addEventListener('click', scrollPrev);
+}
+
+// -------------------------------
 // Render projects from separate data file
 // -------------------------------
 const projectsGrid = document.querySelector('.projects-grid');
