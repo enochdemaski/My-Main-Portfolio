@@ -13,5 +13,17 @@ window.projectsData = [
     title: 'Project 3',
     description: 'A portfolio website with smooth scrolling and clean design.',
     url: '#'
+  },
+
+  {
+    title: 'Project 4',
+    description: 'A simple calculator.',
+    url: '#'
+  },
+
+    {
+    title: 'Project 5',
+    description: 'A to-do app.',
+    url: '#'
   }
 ];

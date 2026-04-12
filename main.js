@@ -83,11 +83,17 @@ if (prevButton) {
 // -------------------------------
 // Render projects from separate data file
 // -------------------------------
+
+//Selet the element where projets will be
 const projectsGrid = document.querySelector('.projects-grid');
 
+
+//Handling errors inase the element and projet does not exist
 const renderProjects = () => {
     if (!projectsGrid || typeof window.projectsData === 'undefined') return;
 
+
+    // puttong project into html
     const projectHtml = window.projectsData.map(project => {
         return `
             <div class="project">
