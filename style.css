@@ -38,9 +38,11 @@ header {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 100;
-    background: rgba(16, 24, 40, 0.95);
+    /* background: rgba(16, 24, 40, 0.95); */
     backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(200, 200, 200, 0.9);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(16, 24, 40, 0.9);
 }
 
 nav {
@@ -74,13 +76,18 @@ nav {
 
 .nav-links.active {
     display: flex;
+    align-items: start;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
-    background: rgba(16, 24, 40, 0.98);
+    width:100%;
+    aspect-ratio: 1/1;
+    margin-left: 50%;
+    background: rgba(16, 24, 40, 0.9);
     padding: 1rem 1.5rem;
-    box-shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
+    box-shadow: 0 12px 30px rgba(200, 200, 200, 0.12);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     z-index: 99;
 }
 
@@ -133,6 +140,7 @@ h2 {
 #hero {
     background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.12), transparent 35%),
                 linear-gradient(180deg, var(--white), #edf2f8);
+                z-index: 1;
 }
 
 .hero-container {

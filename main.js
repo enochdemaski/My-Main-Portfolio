@@ -123,3 +123,10 @@ const handleFormSubmit = (event) => {
 if (contactForm) {
     contactForm.addEventListener('submit', handleFormSubmit);
 }
+
+
+const copyright = document.getElementById("copyright")
+
+let now = new Date()
+let year = now.getFullYear()
+copyright.append(`&copy; ${year} Enoch. All rights reserved.`)
