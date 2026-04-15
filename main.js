@@ -129,4 +129,4 @@ const copyright = document.getElementById("copyright")
 
 let now = new Date()
 let year = now.getFullYear()
-copyright.append(`&copy; ${year} Enoch. All rights reserved.`)
+copyright.append(` ${year} Enoch. All rights reserved.`)
