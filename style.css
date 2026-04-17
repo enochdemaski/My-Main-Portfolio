@@ -78,18 +78,14 @@ nav {
 
 .nav-links.active {
     display: flex;
-    align-items: start;
     position: absolute;
     top: 100%;
     left: 0;
     width:100%;
     aspect-ratio: 1/1;
-    margin-left: 50%;
     background: rgba(16, 24, 40, 0.9);
     padding: 1rem 1.5rem;
     box-shadow: 0 12px 30px rgba(200, 200, 200, 0.12);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     z-index: 99;
 }
 
@@ -104,7 +100,7 @@ nav {
     border: 1px solid #fff;
     border-radius: 15px;
     padding: 10px;
-    width: 40%;
+    width: 60%;
 }
 
 .fa-solid {
@@ -184,10 +180,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.hero-image {
+/* .hero-image {
     display: flex;
     justify-content: center;
-}
+} */
 
 .hero-image img {
     width: 220px;
@@ -231,7 +227,7 @@ button.btn:hover {
     justify-content: center;
     font-size: 30px;
     gap: 30px;
-    margin-top: 3%;
+    margin-top: 7%;
  
 }
 
