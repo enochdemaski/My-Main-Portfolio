@@ -53,7 +53,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-}
+} 
 
 .logo {
     font-size: 1.4rem;
@@ -104,7 +104,7 @@ nav {
 }
 
 .fa-solid {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 
@@ -113,19 +113,16 @@ nav {
 }
 
 
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.hamburger img{
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    width: 10%;
+    aspect-ratio: 1/1;
+    margin-left: 90%;
     cursor: pointer;
 }
 
-.hamburger span {
-    width: 26px;
-    height: 3px;
-    background: var(--white);
-    border-radius: 999px;
-}
+
 
 main {
     margin-top: 90px;
