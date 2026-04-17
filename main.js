@@ -4,14 +4,56 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-const toggleMobileMenu = () => {
-    if (!navLinks) return;
-    navLinks.classList.toggle('active');
-};
 
-if (hamburger) {
-    hamburger.addEventListener('click', toggleMobileMenu);
-}
+//METHOD 1
+hamburger.addEventListener("click", ()=>{
+    navLinks.classList.toggle("active")
+})
+document.addEventListener("click", (e)=>{
+    const inSideMenu = navLinks.contains(e.target)
+    const onbtn = hamburger.contains(e.target)
+    if(inSideMenu || !onbtn){
+        navLinks.classList.remove("active")
+    }
+})
+
+
+
+
+
+// METHOD 2
+// hamburger.addEventListener("click", ()=>{
+//     navLinks.classList.toggle("active")
+// })
+
+// document.addEventListener("click", (e)=>{
+//     if(!e.target.closest(".hamburger") || e.target.closest(".nav-links"))
+//         navLinks.classList.remove("active")
+// })
+
+//METHOD 3
+// hamburger.addEventListener("click", (e)=>{
+// e.stopPropagation()
+// navLinks.classList.toggle("active")
+// })
+// navLinks.addEventListener("click", (e)=>{
+//     // e.stopPropagation()
+// })
+
+// document.addEventListener("click", ()=>{
+//     navLinks.classList.remove("active")
+// })
+
+//METHOD 4
+// const toggleMobileMenu = () => {
+//     if (!navLinks) return;
+//     navLinks.classList.toggle('active');
+// };
+
+// if (hamburger) {
+//     hamburger.addEventListener('click', toggleMobileMenu);
+// }
+
 
 
 
