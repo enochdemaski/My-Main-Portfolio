@@ -17,6 +17,24 @@ document.addEventListener("click", (e)=>{
     }
 })
 
+const greet = document.getElementById("greeting")
+
+let greeting ;
+
+
+const currentTime = new Date().getHours();
+
+if(currentTime < 12){
+    greeting= "Good Morning, Welcome to my portfolio.";
+}else if(currentTime < 18){
+    greeting= "Good Afternoon, Welcome to my portfolio.";
+}else{
+    greeting= "Good Night.";
+}
+
+greet.textContent = greeting;
+
+
 // const text = "Hi, I'm Enoch"
 // const typing  = document.getElementById("typingName")
 

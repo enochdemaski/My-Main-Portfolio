@@ -55,6 +55,11 @@ nav {
     gap: 1rem;
 } 
 
+
+#logo-container{
+    width: 90%;
+}
+
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
@@ -65,6 +70,12 @@ nav {
  .logo a {
      color: var(--white);
     text-decoration: none !important;
+}
+
+#greeting{
+    color: var(--white);
+    font-size: 10px;
+
 }
 
 .nav-links {
@@ -116,7 +127,7 @@ nav {
 .hamburger img{
     border: 3px solid var(--white);
     border-radius: 50%;
-    width: 10%;
+    width: 15%;
     aspect-ratio: 1/1;
     margin-left: 90%;
     cursor: pointer;
@@ -473,6 +484,9 @@ footer {
     }
 }  
 
+
+/* I will be studying PROMISE NEXT, ASYNC, AWAIT, 
+FUNTIONAL PROGROMMING, HIGHER ORDER FUNTION ETCC */
 
 
 
