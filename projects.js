@@ -2,7 +2,7 @@ window.projectsData = [
   {
     title: 'Project 1',
     description: 'A responsive landing page built with HTML and CSS.',
-    url: '#'
+    url: '#https://medium-landing-page-nu.vercel.app/'
   },
   {
     title: 'Project 2',

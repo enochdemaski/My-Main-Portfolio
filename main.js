@@ -17,9 +17,22 @@ document.addEventListener("click", (e)=>{
     }
 })
 
+// const text = "Hi, I'm Enoch"
+// const typing  = document.getElementById("typingName")
 
+// let i = 0
+// function type() {
+//     typing.textContent = text.slice(0, 1)
+//     i++;
 
+//     if(i > text.length){
+//         i = 0
+//     }
 
+//     setTimeout(type, 150)
+// }
+
+// type()
 
 // METHOD 2
 // hamburger.addEventListener("click", ()=>{
