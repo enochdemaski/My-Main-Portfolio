@@ -17,32 +17,37 @@ document.addEventListener("click", (e)=>{
     }
 })
 
-// TITLE TYPING ANIMATION
-const typed = new Typed(".typing-animation", {
-    strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
-    typeSpeed : 150,
-    backSpeed : 150,
-    looped : true,
-})
-
-
 //GREETING MESSAGES
 const greet = document.getElementById("greeting")
 
-let greeting ;
 
-
-const currentTime = new Date().getHours();
+const currentTime = new Date(19).getHours(15);
 
 if(currentTime < 12){
-    greeting= "Good Morning, Welcome to my portfolio.";
+const type = new Typed(".greeting", {
+    strings : ["Good Morning, Welcome To My Home."],
+    typeSpeed : 50,
+    backSpeed : 50,
+    loop : true,
+})
+
 }else if(currentTime < 18){
-    greeting= "Good Afternoon, Welcome to my portfolio.";
+    const type = new Typed(".greeting", {
+    strings : ["Good After, Welcome To My Home."],
+    typeSpeed : 50,
+    backSpeed : 50,
+    loop : true,
+})
 }else{
-    greeting= "Good Night.";
+    const type = new Typed(".greeting", {
+    strings : ["Good Evening, We 24/7 open. Drop a Message."],
+    typeSpeed : 50,
+    backSpeed : 50,
+    loop : true,
+})
 }
 
-greet.textContent = greeting;
+// greet.textContent = greeting;
 
 
 // const text = "Hi, I'm Enoch"
@@ -213,3 +218,19 @@ const copyright = document.getElementById("copyright")
 let now = new Date()
 let year = now.getFullYear()
 copyright.append(` ${year} Enoch. All rights reserved.`)
+
+
+// TITLE TYPING ANIMATION
+const typed = new Typed(".typing-animation", {
+    strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
+    typeSpeed : 50,
+    backSpeed : 50,
+    loop : true,
+})
+
+// const type = new Typed(".greeting", {
+//     strings : ["Good Morning, Welcome To My Home"],
+//     typeSpeed : 50,
+//     backSpeed : 50,
+//     looped : true,
+// })
