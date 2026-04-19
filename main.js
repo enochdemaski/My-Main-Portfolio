@@ -18,36 +18,26 @@ document.addEventListener("click", (e)=>{
 })
 
 //GREETING MESSAGES
-const greet = document.getElementById("greeting")
 
 
-const currentTime = new Date(19).getHours(15);
+const greet = document.getElementById("greeting");
+
+let message = [];
+
+const currentTime = new Date().getHours();
 
 if(currentTime < 12){
-const type = new Typed(".greeting", {
-    strings : ["Good Morning, Welcome To My Home."],
-    typeSpeed : 50,
-    backSpeed : 50,
-    loop : true,
-})
+message.push("Good Morning, Welcome To My Home.")
 
 }else if(currentTime < 18){
-    const type = new Typed(".greeting", {
-    strings : ["Good After, Welcome To My Home."],
-    typeSpeed : 50,
-    backSpeed : 50,
-    loop : true,
-})
+message.push("Good After, Welcome To My Home.")
 }else{
-    const type = new Typed(".greeting", {
-    strings : ["Good Evening, We 24/7 open. Drop a Message."],
-    typeSpeed : 50,
-    backSpeed : 50,
-    loop : true,
-})
+ message.push("Good Evening, Drop a Message")
 }
+// greet.textContent = message;
 
-// greet.textContent = greeting;
+
+
 
 
 // const text = "Hi, I'm Enoch"
@@ -217,20 +207,26 @@ const copyright = document.getElementById("copyright")
 
 let now = new Date()
 let year = now.getFullYear()
-copyright.append(` ${year} Enoch. All rights reserved.`)
+copyright.append(` ${year} Enoch. All rights reserved.`);
 
 
 // TITLE TYPING ANIMATION
-const typed = new Typed(".typing-animation", {
-    strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
-    typeSpeed : 50,
-    backSpeed : 50,
-    loop : true,
-})
-
-// const type = new Typed(".greeting", {
-//     strings : ["Good Morning, Welcome To My Home"],
+// const typed = new Typed(".typing-animation", {
+//     strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
 //     typeSpeed : 50,
 //     backSpeed : 50,
-//     looped : true,
+//     loop : true,
 // })
+
+
+
+
+
+
+const type = new Typed("#greeting", {
+    strings : message,
+    typeSpeed : 50,
+    backSpeed : 50,
+    smartBackspace : false,
+    loop : true,
+})
