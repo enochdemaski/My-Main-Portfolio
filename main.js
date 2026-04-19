@@ -37,6 +37,22 @@ message.push("Good After, Welcome To My Home.")
 // greet.textContent = message;
 
 
+// const title = document.getElementById("typing-animation")
+
+// let titles = [];
+
+// const currentSeconds = new Date().getSeconds();
+
+// if(currentSeconds === 0.2){
+//     titles.push("A Programmer.")
+// }else if(currentSeconds === 0.5){
+//     titles.push("A Graphic Design")
+// }else{
+//     titles.push("A Content Creator")
+// }
+
+
+// // title.textContent=titles;
 
 
 
@@ -211,19 +227,15 @@ copyright.append(` ${year} Enoch. All rights reserved.`);
 
 
 // TITLE TYPING ANIMATION
-// const typed = new Typed(".typing-animation", {
-//     strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
-//     typeSpeed : 50,
-//     backSpeed : 50,
-//     loop : true,
-// })
+const typed = new Typed(".typing-animation", {
+    strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
+    typeSpeed : 50,
+    backSpeed : 50,
+    loop : true,
+})
 
 
-
-
-
-
-const type = new Typed("#greeting", {
+const type = new Typed("#greeting",{
     strings : message,
     typeSpeed : 50,
     backSpeed : 50,
