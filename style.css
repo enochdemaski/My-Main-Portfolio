@@ -183,10 +183,24 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.hero-content .name{
+    color: var(--primary-blue);
+}
+
+
+
+.hero-content .typing-animation{
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+
 .hero-content p {
     font-size: 1.1rem;
     color: var(--secondary-gray);
     margin-bottom: 2rem;
+    margin-top: 7px;
 }
 
 /* .hero-image {

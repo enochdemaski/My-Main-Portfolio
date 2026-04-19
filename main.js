@@ -17,6 +17,16 @@ document.addEventListener("click", (e)=>{
     }
 })
 
+// TITLE TYPING ANIMATION
+const typed = new Typed(".typing-animation", {
+    strings : ["A Programmer"," A Graphic Designer", "A Content Creator"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    looped : true,
+})
+
+
+//GREETING MESSAGES
 const greet = document.getElementById("greeting")
 
 let greeting ;
