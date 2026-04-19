@@ -68,14 +68,14 @@ nav {
 }
 
  .logo a {
-     color: var(--white);
+    color: var(--white);
     text-decoration: none !important;
 }
 
 #greeting{
     color: var(--white);
-    font-size: 10px;
-
+    font-size: 9px;
+    padding: 5px;
 }
 
 .nav-links {
