@@ -107,6 +107,15 @@ message.push("Good After, Welcome To My Home.")
 // }
 
 
+//BOOKS READ
+
+const bookBtn = document.getElementById("btn");
+const bookMenu = document.getElementById("book-menu")
+
+bookBtn.addEventListener("click", ()=>{
+    bookMenu.classList.toggle("show")
+})
+
 
 
 // -------------------------------
