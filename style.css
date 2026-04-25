@@ -6,6 +6,7 @@
     --dark-black: #101820;
     --light-gray: #f4f6fb;
     --white: #ffffff;
+    --red: #ff0000;
     --shadow: rgba(16, 24, 40, 0.12);
 }
 
@@ -243,6 +244,7 @@ button.btn {
     text-transform: capitalize;
 }
 
+
 .btn:hover,
 button.btn:hover {
     transform: translateY(-2px);
@@ -275,12 +277,12 @@ button.btn:hover {
     z-index: 99;
 }
 
-#book-menu:hover{
+/* #book-menu:hover{
     border: 1px solid #fff;
     border-radius: 15px;
     padding: 10px;
     width: 60%;
-}
+} */
 
 
 #book-menu li:hover{
@@ -422,6 +424,22 @@ button.btn:hover {
 #contact {
     background: #f8fbff;
 }
+
+#contact > .container > h2{
+
+}
+
+#formerro{
+    border: 1px solid var(--red);
+    border-radius: 15px;
+    background-color: var(--red);
+    color: var(--white);
+    width: 50%;
+    padding: 7px;
+    text-transform: capitalize;
+    margin-left: 25%;
+}
+
 
 form {
     display: flex;

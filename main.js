@@ -117,6 +117,15 @@ bookBtn.addEventListener("click", ()=>{
 })
 
 
+document.addEventListener("click", (e)=>{
+    const inBook = bookMenu.contains(e.target)
+    const bookButton = bookBtn.contains(e.target)
+
+    if(inBook || !bookButton){
+        bookMenu.classList.remove("show")
+    }
+})
+
 
 // -------------------------------
 // Smooth scrolling for navigation
@@ -216,11 +225,17 @@ renderProjects();
 // Contact form submission
 // -------------------------------
 const contactForm = document.querySelector('form');
+const formError = document.getElementById("formerro")
 
-const handleFormSubmit = (event) => {
-    event.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
+formError.textContent=""
+formError.classList.remove("formerro")
+
+const handleFormSubmit = (e) => {
+    e.preventDefault();
+    formError.textContent= "Please fill the form"
+    formError.classList.add("formerro")
+    // alert('Thank you for your message! I will get back to you soon.');
+    // contactForm.reset();
 };
 
 if (contactForm) {
