@@ -7,7 +7,7 @@ window.projectsData = [
   },
 
   {
-    title: 'Project 4',
+    title: 'Project 2',
     description: 'A simple calculator.',
      img: `./assets/images/calculator.png`,
     url: 'https://first-calculator-omega.vercel.app/'
@@ -21,7 +21,7 @@ window.projectsData = [
 
 
   {
-    title: 'Project 2',
+    title: 'Project 4',
     description: 'A simple JavaScript app to manage tasks and notes.',
     url: '#'
   },
