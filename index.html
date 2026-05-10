@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
            <div id="logo-container">
             <div class="logo"><a href="#hero">{Enoch}</a></div>
@@ -45,10 +45,10 @@
                 <img src="./assets/images/maski.png" alt="Profile image of Enoch">
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <main>
-        <section id="hero">
+        <!-- <section id="hero">
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 id="name">Hi, I'm <span class="name">Enoch.</span></h1>
@@ -76,16 +76,16 @@
                     <img src="./assets/images/maski.png" alt="Profile image of Enoch">
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="about">
+        <!-- <section id="about">
             <div class="container">
                 <h2>About Me</h2>
                 <p>I am a passionate individual focused on building practical projects with my skill-set in HTML, CSS and JAVASCRIPT. I have built a couple of projects with those, below are some of them.</p>
             </div>
-        </section>
+        </section> -->
 
-        <section id="skills">
+        <!-- <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-carousel">
@@ -101,24 +101,32 @@
                     <button class="carousel-btn next">&gt;</button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="projects">
-            <div class="container">
                 <h2>Projects</h2>
-                <div class="projects-grid"></div>
+                <div class="project-container">
+                 <div class="projects-grid"></div>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <form>
-                    <p id="formerro"></p>
-                    <input type="text" placeholder="Name">
+                <form  action="#" target="_blank" method="post" id="MyForm">
+                    <p id="headmessage"></p>
+
+                    <input type="text" placeholder="Name" id="name">
+                    <small id="nameError"></small>
+
                     <input type="email" placeholder="Email">
+                      <small id="emailerro"></small>
+
                     <textarea placeholder="Message"></textarea>
+                      <small id="texterro"></small>
+
                     <button type="submit" class="btn">Send Message</button>
+                      <small id="btnerro"></small>
                 </form>
             </div>
         </section>
@@ -132,7 +140,6 @@
                     <a href="https://github.com/enochdemaski"><i class="fa-brands fa-github"></i></a>
             </div>
     </footer>
-
     <script src="projects.js"></script>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="main.js"></script>
