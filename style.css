@@ -393,13 +393,10 @@ button.btn:hover {
 
 /* Projects */
 #projects {
-    /* background: var(--accent-blue); */
+    background: var(--light-gray)
 }
 
 
-.project-container{
-
-}
 
 .projects-grid {
     display: grid;
