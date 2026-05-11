@@ -15,8 +15,9 @@ window.projectsData = [
 
   {
     title: 'Project 3',
-    description: 'A portfolio website with smooth scrolling and clean design.',
-    url: '#'
+    description: 'A simple school result system.',
+    img: `./assets/images/sch-system.png`,
+    url: 'https://school-system-result-check-p6a1.vercel.app/'
   },
 
 
