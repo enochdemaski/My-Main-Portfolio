@@ -21,8 +21,10 @@
 body {
     font-family: 'Arial', sans-serif;
     color: var(--dark-black);
-    background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+    min-height: 100vh;
+    /* background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%); */
 }
+
 
 img {
     max-width: 100%;
@@ -79,6 +81,100 @@ nav {
     font-size: 9px;
     padding: 5px;
 }
+
+.theme{
+    text-transform: capitalize;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(16, 24, 40, 0.9);
+    color: var(--white);
+    box-shadow: 0 12px 30px rgba(200, 200, 200, 0.12);
+}
+
+.class-theme{
+   display: none;
+}
+
+.class-theme.actives {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    border: 1px solid #101820;
+    border-radius: 2px;
+    width: 100%;
+    z-index: 99;
+    aspect-ratio: 1/1;
+    background: rgba(16, 24, 40, 0.9);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 12px 30px rgba(200, 200, 150, 0.12);
+    display: grid;
+    place-items: center;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.theme-color{
+    width: 60%;
+    aspect-ratio: 1/1;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#green{
+    background-color: #38ea38;
+    border-radius: 10px;
+}
+#gray{
+    background-color: #808080;
+    border-radius: 10px;
+}
+#white{
+    background-color: #fff;
+    border-radius: 10px;
+}
+#orange{
+    background-color: #ffa500;
+    border-radius: 10px;
+}
+#black{
+    background-color: #000;
+    border-radius: 10px;
+}
+#blue{
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+#oranged{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+#purple{
+    background-color: purple;
+    border-radius: 10px;
+}
+#darkgreen{
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+#red{
+    background-color: red;
+    border-radius: 10px;
+}
+#darkblue{
+    background-color: darkblue;
+    border-radius: 10px;
+}
+#lightgray{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------- */
 
 .nav-links {
     display: none;
@@ -161,8 +257,8 @@ h2 {
 
 /* Hero */
 #hero {
-    background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.12), transparent 35%),
-                linear-gradient(180deg, var(--white), #edf2f8);
+    /* background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.12), transparent 35%),
+                linear-gradient(180deg, var(--white), #edf2f8); */
                 z-index: 1;
 }
 
@@ -183,6 +279,7 @@ h2 {
     font-size: 2.4rem;
     line-height: 1.05;
     margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .hero-content .name{
@@ -196,11 +293,12 @@ h2 {
     font-size: 2.4rem;
     line-height: 1.05;
     margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .hero-content p {
     font-size: 1.1rem;
-    color: var(--dark-black);
+    color: var(--white);
     margin-bottom: 2rem;
     margin-top: 7px;
 }
@@ -303,17 +401,15 @@ button.btn:hover {
     font-size: 30px;
     gap: 30px;
     margin-top: 7%;
- 
 }
 
 .social-handles a:hover{
-    padding: 2px;
     border-radius: 50%;
 }
 
 /* About */
 #about {
-    background: var(--light-gray);
+    /* background: var(--light-gray); */
     color: var(--dark-black);
 }
 
@@ -327,7 +423,7 @@ button.btn:hover {
 
 /* Skills Carousel */
 #skills {
-    background: #f8fbff;
+    /* background: #f8fbff; */
 }
 
 .skills-carousel {
@@ -395,7 +491,7 @@ button.btn:hover {
 
 /* Projects */
 #projects {
-    background: var(--light-gray);
+    /* background: var(--light-gray); */
 }
 
 .project-container{
@@ -459,7 +555,7 @@ button.btn:hover {
 
 /* Contact */
 #contact {
-    background: #f8fbff;
+    /* background: #f8fbff; */
 }
 
 

@@ -1,18 +1,21 @@
 // import {project} from "./projects"
 
 
-
+function btnClick(btnSelector, menuSelector){
+   return btnSelector.addEventListener("click", ()=>{
+        menuSelector.classList.toggle("show")
+   })
+}
 // -------------------------------
 // Mobile menu toggle
 // -------------------------------
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-
-//METHOD 1
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+//MENU 
 hamburger.addEventListener("click", ()=>{
     navLinks.classList.toggle("active")
 })
+
 document.addEventListener("click", (e)=>{
     const inSideMenu = navLinks.contains(e.target)
     const onbtn = hamburger.contains(e.target)
@@ -22,8 +25,6 @@ document.addEventListener("click", (e)=>{
 })
 
 //GREETING MESSAGES
-
-
 const greet = document.getElementById("greeting");
 
 let message = [];
@@ -39,8 +40,37 @@ message.push("Good After, Welcome To My Home.")
  message.push("Good Evening, Drop a Message")
 }
 
+// FOR THEME PANEL
 
-//BOOKS READ
+const theme = document.querySelector(".theme")
+const themeMenu = document.querySelector(".class-theme")
+
+theme.addEventListener("click", ()=>{
+    themeMenu.classList.toggle("actives")
+})
+
+const colorButton = document.querySelectorAll(".theme-color")
+colorButton.forEach(buton => {
+    buton.addEventListener("click", () => {
+        const color = buton.dataset.color;
+        document.body.style.backgroundColor = color;
+        // themeMenu.classList.remove("actives")
+    })
+})
+
+document.addEventListener("click", (e)=>{
+    const inMenu = themeMenu.contains(e.target)
+    const onbton = theme.contains(e.target)
+    if(inMenu || !onbton){
+        themeMenu.classList.remove("actives")
+    }
+})
+
+
+
+
+
+//BOOKS READ----------------------------------------------------
 
 const bookBtn = document.getElementById("btn");
 const bookMenu = document.getElementById("book-menu")
