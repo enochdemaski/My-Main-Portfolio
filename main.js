@@ -35,7 +35,7 @@ if(currentTime < 12){
 message.push("Good Morning, Welcome To My Home.")
 
 }else if(currentTime < 18){
-message.push("Good After, Welcome To My Home.")
+message.push("Good Afternoon, Welcome To My Home.")
 }else{
  message.push("Good Evening, Drop a Message")
 }
@@ -52,9 +52,10 @@ theme.addEventListener("click", ()=>{
 const colorButton = document.querySelectorAll(".theme-color")
 colorButton.forEach(buton => {
     buton.addEventListener("click", () => {
-        const color = buton.dataset.color;
+        const color = buton.dataset.bg;
+        const text = buton.dataset.text;
         document.body.style.backgroundColor = color;
-        // themeMenu.classList.remove("actives")
+        document.body.style.color = text;
     })
 })
 
