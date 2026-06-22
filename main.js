@@ -59,6 +59,10 @@ colorButton.forEach(buton => {
     })
 })
 
+// for(let i = 0; i <= colorButton.length; i++){
+//     console.log(colorButton[i])
+// }
+
 document.addEventListener("click", (e)=>{
     const inMenu = themeMenu.contains(e.target)
     const onbton = theme.contains(e.target)
